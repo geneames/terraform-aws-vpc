@@ -1,5 +1,5 @@
 module "vpc" {
-  source     = "git::https://github.com/cloudposse/terraform-aws-vpc.git?ref=master"
+  source     = "git::https://github.com/geneames/terraform-aws-vpc.git?ref=tags/0.11.14"
   namespace  = "${var.namespace}"
   stage      = "${var.stage}"
   name       = "${var.name}"
@@ -7,7 +7,7 @@ module "vpc" {
 }
 
 module "dynamic_subnets" {
-  source              = "git::https://github.com/cloudposse/terraform-aws-dynamic-subnets.git?ref=master"
+  source              = "git::https://github.com/geneames/terraform-aws-dynamic-subnets.git?ref=tags/0.11.14"
   namespace           = "${var.namespace}"
   stage               = "${var.stage}"
   name                = "${var.name}"
